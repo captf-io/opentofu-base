@@ -27,7 +27,7 @@
 
 # opentofu:*-minimal is FROM scratch with only the statically linked tofu
 # binary; the full image refuses to be a FROM base (ONBUILD RUN exit 1).
-FROM ghcr.io/opentofu/opentofu:1.12.6-minimal@sha256:2fedbb3e956b083582543dabb76eba17e9f961dfd055311ea054a6191cfae9dd AS runtime
+FROM ghcr.io/opentofu/opentofu:1.12.7-minimal@sha256:1349f86c125d1e72d63b9ef7f9492b5a4368820a7bc7c1e1f0f8374e02543973 AS runtime
 
 FROM docker.io/library/ubuntu:26.04@sha256:da6fc2be547864451aa253836dd926da33623312df4a9a243e35dc877c378a78
 ARG RUNTIME_VERSION
