@@ -29,7 +29,7 @@
 # binary; the full image refuses to be a FROM base (ONBUILD RUN exit 1).
 FROM ghcr.io/opentofu/opentofu:1.12.7-minimal@sha256:1349f86c125d1e72d63b9ef7f9492b5a4368820a7bc7c1e1f0f8374e02543973 AS runtime
 
-FROM docker.io/library/ubuntu:26.04@sha256:da6fc2be547864451aa253836dd926da33623312df4a9a243e35dc877c378a78
+FROM docker.io/library/ubuntu:26.04@sha256:f144425ff09be612d6d9ad965196e9cdc23dae1f42110a8a11a3e9a8198759f7
 ARG RUNTIME_VERSION
 ARG IMAGE_SOURCE=""
 ARG IMAGE_REVISION=""
